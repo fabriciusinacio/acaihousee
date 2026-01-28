@@ -1,0 +1,163 @@
+<!doctype html>
+<html lang="pt-BR">
+  <head>
+    <meta charset="utf-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1" />
+    <title>Carrinho | AçaiHouse</title>
+    <link rel="icon" href="imagens/icone-acai.svg" type="image/svg+xml" />
+    <link rel="stylesheet" href="styles.css" />
+  </head>
+  <body>
+    <header class="cabecalho">
+      <div class="barra-topo">
+        <div class="marca">
+          <img
+            src="imagens/acai-logo.png"
+            alt="Logo AçaiHouse"
+            class="logo"
+          />
+          <span class="status-loja" data-status-loja>Fechado</span>
+        </div>
+        <button class="botao-menu" type="button" aria-label="Abrir menu" aria-expanded="false" data-menu-toggle><span class="botao-menu-icone" aria-hidden="true"><span></span><span></span><span></span></span></button>
+        <nav class="navegacao">
+          <a class="botao-nav" href="index.html#secao-inicio">Início</a>
+          <a class="botao-nav" href="cardapio.html">Cardápio</a>
+          <a class="botao-nav" href="index.html#secao-contato">Contato</a>
+                  </nav>
+      </div>
+    </header>
+
+    <main>
+      <section class="secao">
+        <div class="secao-cabecalho">
+          <p class="secao-etiqueta">Carrinho</p>
+          <h2 class="secao-titulo">Finalize seu pedido</h2>
+        </div>
+
+        <form class="formulario-pedido formulario-pedido--carrinho" id="formulario-carrinho">
+          <div class="pedido-grid">
+            <section class="pedido-config">
+              <div class="campo-formulario">
+                <label for="nome-cliente">Nome</label>
+                <input
+                  id="nome-cliente"
+                  name="nome-cliente"
+                  type="text"
+                  placeholder="Seu nome"
+                  required
+                />
+              </div>
+              <div class="campo-formulario">
+                <label for="telefone-cliente">Telefone</label>
+                <input
+                  id="telefone-cliente"
+                  name="telefone-cliente"
+                  type="tel"
+                  placeholder="DDD + numero"
+                  required
+                />
+              </div>
+              <div class="campo-formulario">
+                <label for="endereco-cliente">Endereço</label>
+                <input
+                  id="endereco-cliente"
+                  name="endereco-cliente"
+                  type="text"
+                  placeholder="Rua, número"
+                  required
+                />
+              </div>
+              <div class="campo-formulario">
+                <label for="referencia-cliente">Referência</label>
+                <input
+                  id="referencia-cliente"
+                  name="referencia-cliente"
+                  type="text"
+                  placeholder="Ponto de referncia"
+                />
+              </div>
+              <div class="campo-formulario">
+                <label for="pagamento-cliente">Forma de pagamento</label>
+                <select id="pagamento-cliente" name="pagamento-cliente" required>
+                  <option value="">Selecione</option>
+                  <option>Dinheiro</option>
+                  <option>Pix</option>
+                  <option>Carto de débito</option>
+                  <option>Carto de crédito</option>
+                </select>
+              </div>
+              <div class="campo-formulario">
+                <label for="descricao-pedido">Descrição do pedido</label>
+                <textarea
+                  id="descricao-pedido"
+                  name="descricao-pedido"
+                  rows="4"
+                  placeholder="Observações gerais do pedido"
+                ></textarea>
+              </div>
+              <label class="opcao-checagem">
+                <input type="checkbox" id="enviar-whatsapp" />
+                Enviar pedido via WhatsApp
+              </label>
+              <div class="campo-formulario" id="campo-enviar-whatsapp">
+                <button class="botao-principal" type="submit">
+                  Enviar pedido
+                </button>
+              </div>
+            </section>
+
+            <aside class="pedido-resumo">
+              <div class="pedido-carrinho">
+                <h3 class="pedido-subtitulo">Resumo do pedido</h3>
+                <p class="pedido-vazio" id="carrinho-vazio-final">
+                  Nenhum item adicionado.
+                </p>
+                <ul class="lista-carrinho" id="lista-carrinho-final"></ul>
+                <div class="pedido-total">
+                  <span>Total</span>
+                  <strong id="total-final">R$ 0,00</strong>
+                </div>
+              </div>
+            </aside>
+          </div>
+        </form>
+      </section>
+    </main>
+
+    <div class="modal oculto" id="modal-remocao" aria-hidden="true">
+      <div class="modal-conteudo" role="dialog" aria-modal="true">
+        <h3 class="modal-titulo">Remover item</h3>
+        <p class="modal-texto">Deseja remover este item do carrinho?</p>
+        <div class="modal-acoes">
+          <button class="botao-secundario" type="button" id="cancelar-remocao">
+            Cancelar
+          </button>
+          <button class="botao-principal" type="button" id="confirmar-remocao">
+            Remover
+          </button>
+        </div>
+      </div>
+    </div>
+
+    <footer class="rodape rodape-info">
+      <div>
+        <p>© 2024 AçaiHouse. Feito com carinho e açai gelado.</p>
+        <p>Desenvolvido por Fabricius Inacio.</p>
+      </div>
+      <a class="botao-secundario rodape-admin" href="admin-login.html">Admin</a>
+    </footer>
+
+    <script src="https://cdn.jsdelivr.net/npm/@supabase/supabase-js@2"></script>
+    <script src="script.js"></script>
+  </body>
+</html>
+
+
+
+
+
+
+
+
+
+

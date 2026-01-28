@@ -1,0 +1,109 @@
+<!doctype html>
+<html lang="pt-BR">
+  <head>
+    <meta charset="utf-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1" />
+    <title>Cardápio | AçaiHouse</title>
+    <link rel="icon" href="imagens/icone-acai.svg" type="image/svg+xml" />
+    <link rel="stylesheet" href="styles.css" />
+  </head>
+  <body>
+    <header class="cabecalho" id="secao-inicio">
+      <div class="barra-topo">
+        <div class="marca">
+          <img
+            src="imagens/acai-logo.png"
+          alt="Logo AçaiHouse"
+            class="logo"
+          />
+          <span class="status-loja" data-status-loja>Fechado</span>
+        </div>
+        <button class="botao-menu" type="button" aria-label="Abrir menu" aria-expanded="false" data-menu-toggle><span class="botao-menu-icone" aria-hidden="true"><span></span><span></span><span></span></span></button>
+        <nav class="navegacao">
+          <a class="botao-nav" href="#secao-inicio">Início</a>
+          <a class="botao-nav" href="#secao-cardapio">Cardápio</a>
+          <a class="botao-nav" href="#secao-contato">Contato</a>
+                  </nav>
+      </div>
+
+      
+    </header>
+
+    <main>
+      <section class="secao destaque" id="secao-cardapio">
+        <h2 class="titulo-cardapio">Cardápio</h2>
+        <div class="grade-cardapio" id="grade-cardapio"></div>
+      </section>
+
+      <section class="secao" id="secao-adicionais">
+        <div class="secao-cabecalho">
+          <p class="secao-etiqueta">Adicionais</p>
+          <h2 class="secao-titulo">Escolha seu Adicional</h2>
+          <p class="secao-texto">
+            Complemente com caldas especiais, crocantes e frutas tropicais.
+          </p>
+        </div>
+        <div class="grade-adicionais lista-adicionais">
+          <a class="item-adicional adicional-link" href="pedidos.html">Leite condensado</a>
+          <a class="item-adicional adicional-link" href="pedidos.html">Granola</a>
+          <a class="item-adicional adicional-link" href="pedidos.html">M&amp;M</a>
+          <a class="item-adicional adicional-link" href="pedidos.html">Kit Kat</a>
+          <a class="item-adicional adicional-link" href="pedidos.html">Banana</a>
+          <a class="item-adicional adicional-link" href="pedidos.html">Uva</a>
+          <a class="item-adicional adicional-link" href="pedidos.html">Kiwi</a>
+          <a class="item-adicional adicional-link" href="pedidos.html">Morango</a>
+          <a class="item-adicional adicional-link" href="pedidos.html">Manga</a>
+          <a class="item-adicional adicional-link" href="pedidos.html">Maracujá</a>
+          <a class="item-adicional adicional-link" href="pedidos.html">Paçoca</a>
+          <a class="item-adicional adicional-link" href="pedidos.html">Leite em pó</a>
+          <a class="item-adicional adicional-link" href="pedidos.html">Creme de avelã</a>
+          <a class="item-adicional adicional-link" href="pedidos.html">Pasta de amendoim</a>
+          <a class="item-adicional adicional-link" href="pedidos.html">Coco ralado</a>
+          <a class="item-adicional adicional-link" href="pedidos.html">Castanha de caju</a>
+          <a class="item-adicional adicional-link" href="pedidos.html">Amendoim</a>
+          <a class="item-adicional adicional-link" href="pedidos.html">Biscoito crocante</a>
+          <a class="item-adicional adicional-link" href="pedidos.html">Calda de chocolate</a>
+          <a class="item-adicional adicional-link" href="pedidos.html">Calda de morango</a>
+        </div>
+      </section>
+
+      <section class="secao contato" id="secao-contato">
+        <div class="secao-cabecalho">
+          <p class="secao-etiqueta">Contato</p>
+          <h2 class="secao-titulo">Peça seu açai e refresque o dia</h2>
+          <p class="secao-texto">
+            Atendimento diário das 10h às 22h. Entregas rápidas no bairro e
+            retirada na loja.
+          </p>
+        </div>
+        <div class="painel-contato">
+          <div>
+            <p class="contato-destaque">Rua das Palmeiras, 108 - Centro</p>
+            <p>WhatsApp: (11) 98888-7777</p>
+            <p>Instagram: @acaiverao</p>
+          </div>
+          <a class="botao-principal" href="pedidos.html">Fazer pedido</a>
+        </div>
+      </section>
+    </main>
+
+    <footer class="rodape rodape-info">
+      <div>
+        <p>© 2024 AçaiHouse. Energia tropical todos os dias.</p>
+        <p>Desenvolvido por Fabricius Inacio.</p>
+      </div>
+      <a class="botao-secundario rodape-admin" href="admin-login.html">Admin</a>
+    </footer>
+
+    <script src="https://cdn.jsdelivr.net/npm/@supabase/supabase-js@2"></script>
+    <script src="script.js"></script>
+  </body>
+</html>
+
+
+
+
+
+
+
+

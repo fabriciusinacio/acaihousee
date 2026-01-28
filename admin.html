@@ -1,0 +1,135 @@
+<!doctype html>
+<html lang="pt-BR">
+  <head>
+    <meta charset="utf-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1" />
+    <title>Painel Admin | AçaiHouse</title>
+    <link rel="icon" href="imagens/icone-acai.svg" type="image/svg+xml" />
+    <link rel="stylesheet" href="styles.css" />
+  </head>
+  <body>
+    <header class="cabecalho">
+      <div class="barra-topo">
+        <div class="marca">
+          <img src="imagens/acai-logo.png" alt="Logo AçaiHouse" class="logo" />
+          <span class="status-loja" data-status-loja>Fechado</span>
+        </div>
+        <button class="botao-menu" type="button" aria-label="Abrir menu" aria-expanded="false" data-menu-toggle><span class="botao-menu-icone" aria-hidden="true"><span></span><span></span><span></span></span></button>
+        <nav class="navegacao">
+          <a class="botao-nav" href="index.html#secao-inicio">Início</a>
+          <a class="botao-nav" href="cardapio.html">Cardápio</a>
+          <a class="botao-nav" href="index.html#secao-contato">Contato</a>
+        </nav>
+      </div>
+    </header>
+
+    <main>
+      <section class="secao">
+        <div class="secao-cabecalho">
+          <p class="secao-etiqueta">Admin</p>
+          <h2 class="secao-titulo">Painel de controle</h2>
+          <p class="secao-texto">
+            Configuração local (localStorage) para precos e imagens.
+          </p>
+          <div class="lista-opcoes">
+            <label class="status-loja-controle">
+              Status da loja
+              <select id="status-loja-admin">
+                <option value="fechado">Fechado</option>
+                <option value="aberto">Aberto</option>
+              </select>
+            </label>
+          </div>
+          <div class="lista-opcoes acoes-admin">
+            <a class="botao-secundario" href="admin-pedidos.html">Ver pedidos</a>
+            <a class="botao-secundario" href="relatorio.html">Relatório</a>
+            <button class="botao-secundario" type="button" id="admin-logout">
+              Sair
+            </button>
+            <button
+              class="botao-secundario"
+              type="button"
+              id="admin-toggle-config"
+              aria-expanded="false"
+              aria-controls="admin-configuracoes"
+            >
+              Configurações
+            </button>
+          </div>
+        </div>
+
+        <form class="formulario-pedido" id="formulario-admin">
+          <div class="admin-configuracoes oculto" id="admin-configuracoes">
+            <h3 class="pedido-subtitulo">Adicionais (tradicional/tigela)</h3>
+            <p class="campo-ajuda">Defina nome e preco por item.</p>
+            <div class="lista-opcoes" id="admin-adicionais-lista"></div>
+            <div class="lista-opcoes">
+              <button
+                class="botao-secundario"
+                type="button"
+                id="admin-adicionar-adicional"
+              >
+                Adicionar adicional
+              </button>
+            </div>
+
+            <h3 class="pedido-subtitulo">Adicionais garrafa/batidinha</h3>
+            <p class="campo-ajuda">Escolha os itens disponiveis para essa categoria.</p>
+            <div class="lista-opcoes" id="admin-adicionais-garrafa-lista"></div>
+            <div class="lista-opcoes">
+              <button
+                class="botao-secundario"
+                type="button"
+                id="admin-adicionar-adicional-garrafa"
+              >
+                Adicionar adicional
+              </button>
+            </div>
+
+            <h3 class="pedido-subtitulo">Produtos do catalogo</h3>
+            <p class="campo-ajuda">Defina nome, descricao, preco e imagem.</p>
+            <div class="lista-opcoes" id="admin-produtos-lista"></div>
+            <div class="lista-opcoes">
+              <button
+                class="botao-secundario"
+                type="button"
+                id="admin-adicionar-produto"
+              >
+                Adicionar produto
+              </button>
+            </div>
+
+            <h3 class="pedido-subtitulo">Destaques da home</h3>
+            <p class="campo-ajuda">
+              Edite titulo, descricao e imagem do destaque.
+            </p>
+            <div class="lista-opcoes" id="admin-destaques-lista"></div>
+            <div class="lista-opcoes">
+              <button
+                class="botao-secundario"
+                type="button"
+                id="admin-adicionar-destaque"
+              >
+                Adicionar destaque
+              </button>
+            </div>
+
+            <div class="lista-opcoes">
+              <button class="botao-principal" type="submit">Salvar</button>
+              <span class="campo-ajuda" id="admin-status"></span>
+            </div>
+          </div>
+        </form>
+      </section>
+    </main>
+
+    <script src="https://cdn.jsdelivr.net/npm/@supabase/supabase-js@2"></script>
+    <script src="script.js"></script>
+  </body>
+</html>
+
+
+
+
+
+

@@ -1,0 +1,255 @@
+<!doctype html>
+<html lang="pt-BR">
+  <head>
+    <meta charset="utf-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1" />
+    <title>Pedido | AçaiHouse</title>
+    <link rel="icon" href="imagens/icone-acai.svg" type="image/svg+xml" />
+    <link rel="stylesheet" href="styles.css" />
+  </head>
+  <body>
+    <header class="cabecalho">
+      <div class="barra-topo">
+        <div class="marca">
+          <img
+            src="imagens/acai-logo.png"
+            alt="Logo AçaiHouse"
+            class="logo"
+          />
+          <span class="status-loja" data-status-loja>Fechado</span>
+        </div>
+        <button class="botao-menu" type="button" aria-label="Abrir menu" aria-expanded="false" data-menu-toggle><span class="botao-menu-icone" aria-hidden="true"><span></span><span></span><span></span></span></button>
+        <nav class="navegacao">
+          <a class="botao-nav" href="index.html#secao-inicio">Início</a>
+          <a class="botao-nav" href="cardapio.html">Cardápio</a>
+          <a class="botao-nav" href="index.html#secao-contato">Contato</a>
+                  </nav>
+      </div>
+    </header>
+
+    <main>
+      <section class="secao">
+        <div class="secao-cabecalho">
+          <p class="secao-etiqueta">Pedido</p>
+          <h2 class="secao-titulo">Seu açai do jeitinho que voc gosta</h2>
+          <p class="secao-texto"></p>
+        </div>
+
+        <form class="formulario-pedido formulario-pedido--carrinho" id="formulario-pedido">
+
+          <div class="pedido-grid">
+            <section class="pedido-config">
+              <h3 class="pedido-subtitulo">Monte seu pedido</h3>
+              <div class="opcoes-produto">
+                <label class="opcao-produto">
+                  <input
+                    type="radio"
+                    name="tipo-produto"
+                    value="Tradicional"
+                    data-imagem="imagens/40.jpg"
+                    checked
+                  />
+                  <img src="imagens/40.jpg" alt="Tradicional" />
+                  <span>Tradicional</span>
+                </label>
+                <label class="opcao-produto">
+                  <input
+                    type="radio"
+                    name="tipo-produto"
+                    value="Açai na Garrafa"
+                    data-imagem="imagens/10.jpg"
+                  />
+                  <img src="imagens/10.jpg" alt="Açai na garrafa" />
+                  <span>Açai na Garrafa</span>
+                </label>
+                <label class="opcao-produto">
+                  <input
+                    type="radio"
+                    name="tipo-produto"
+                    value="Açai na Tigela"
+                    data-imagem="imagens/20.jpg"
+                  />
+                  <img src="imagens/20.jpg" alt="Açai na tigela" />
+                  <span>Açai na Tigela</span>
+                </label>
+                <label class="opcao-produto">
+                  <input
+                    type="radio"
+                    name="tipo-produto"
+                    value="Batidinha de Açai"
+                    data-imagem="imagens/acai-roxo-e-amarelo.png"
+                  />
+                  <img
+                    src="imagens/acai-roxo-e-amarelo.png"
+                    alt="Batidinha de açai"
+                  />
+                  <span>Batidinha de Açai</span>
+                </label>
+              </div>
+              <p class="campo-ajuda oculto" id="garrafa-tamanho-info">
+                Açai na Garrafa: tamanho único 300 ml - R$ 18,00.
+              </p>
+              <p class="campo-ajuda oculto" id="batidinha-tamanho-info">
+                Batidinha de Açai: tamanho único 300 ml - R$ 18,00.
+              </p>
+
+              <div class="campo-formulario" data-campo-tamanho>
+                <label>Tamanho</label>
+                <div class="lista-opcoes">
+                  <label class="opcao-checagem">
+                    <input type="radio" name="tamanho" value="P - 300 ml" data-gratis="2" />
+                    P 300 ml (2 adicionais grátis) -
+                    <span class="adicional-preco" data-preco-tamanho="P - 300 ml">R$ 15,00</span>
+                  </label>
+                  <label class="opcao-checagem">
+                    <input type="radio" name="tamanho" value="M - 500 ml" data-gratis="3" />
+                    M 500 ml (3 adicionais grátis) -
+                    <span class="adicional-preco" data-preco-tamanho="M - 500 ml">R$ 18,00</span>
+                  </label>
+                  <label class="opcao-checagem">
+                    <input type="radio" name="tamanho" value="G - 700 ml" data-gratis="4" />
+                    G 700 ml (4 adicionais grátis) -
+                    <span class="adicional-preco" data-preco-tamanho="G - 700 ml">R$ 22,00</span>
+                  </label>
+                </div>
+              </div>
+
+              <div class="campo-formulario oculto" data-campo-tamanho-tigela>
+                <label>Tamanho da tigela</label>
+                <div class="lista-opcoes">
+                  <label class="opcao-checagem">
+                    <input
+                      type="radio"
+                      name="tamanho-tigela"
+                      value="600 ml"
+                      data-gratis="4"
+                    />
+                    600 ml (4 adicionais grátis) -
+                    <span class="adicional-preco" data-preco-tigela="600 ml">R$ 29,90</span>
+                  </label>
+                  <label class="opcao-checagem">
+                    <input
+                      type="radio"
+                      name="tamanho-tigela"
+                      value="1 litro"
+                      data-gratis="5"
+                    />
+                    1 litro (5 adicionais grátis) -
+                    <span class="adicional-preco" data-preco-tigela="1 litro">R$ 35,90</span>
+                  </label>
+                </div>
+              </div>
+
+              <div class="campo-formulario oculto" data-campo-trufada>
+                <label>Deseja trufada?</label>
+                <div class="lista-opcoes">
+                  <label class="opcao-checagem">
+                    <input type="radio" name="trufada" value="Sim" />
+                    Sim, trufada
+                  </label>
+                  <label class="opcao-checagem">
+                    <input type="radio" name="trufada" value="No" />
+                    No, sem trufar
+                  </label>
+                </div>
+              </div>
+
+              <div class="campo-formulario oculto" data-campo-ingredientes>
+                <label>Adicionais grátis</label>
+                <p class="campo-ajuda" id="contador-gratis">
+                  Escolha o tamanho para liberar os adicionais grátis.
+                </p>
+                <div class="lista-opcoes" id="lista-adicionais-gratis"></div>
+              </div>
+
+              <div class="campo-formulario oculto" data-campo-adicionais>
+                <label>Adicionais</label>
+                <div class="lista-opcoes" id="lista-adicionais-pagos"></div>
+              </div>
+
+              <div class="campo-formulario oculto mostrar-preco" data-campo-adicionais-garrafa>
+                <label>Adicional da garrafa/batidinha (1 grátis - escolha 1)</label>
+                <div class="lista-opcoes" id="lista-adicionais-garrafa"></div>
+              </div>
+
+              <div class="campo-formulario oculto mostrar-preco" data-campo-adicionais-garrafa-extra>
+                <label id="rotulo-adicional-garrafa-extra">
+                  Adicionais extras (R$ 2,50 cada)
+                </label>
+                <div class="lista-opcoes" id="lista-adicionais-garrafa-extra"></div>
+              </div>
+
+              <div class="campo-formulario">
+                <label for="observacoes-pedido">Observações do item</label>
+                <textarea
+                  id="observacoes-pedido"
+                  name="observacoes-pedido"
+                  rows="4"
+                  placeholder="Conte para a gente algum detalhe importante"
+                ></textarea>
+              </div>
+              <div class="lista-opcoes">
+                <button
+                  class="botao-secundario"
+                  type="button"
+                  id="adicionar-carrinho"
+                >
+                  Adicionar ao carrinho
+                </button>
+                <button class="botao-principal" type="button" id="enviar-pedido">
+                  Enviar pedido
+                </button>
+              </div>
+            </section>
+
+            <aside class="pedido-resumo">
+              <div class="pedido-miniatura">
+                <img
+                  id="pedido-imagem"
+                  src="imagens/40.jpg"
+                  alt="Miniatura do produto selecionado"
+                />
+                <div>
+                  <p class="pedido-miniatura-titulo" id="pedido-nome">Tradicional</p>
+                  <p class="pedido-miniatura-info" id="pedido-detalhe">
+                    Selecione os detalhes do pedido.
+                  </p>
+                  <div class="pedido-total">
+                    <span>Total adicionais</span>
+                    <strong id="total-pedido">R$ 0,00</strong>
+                  </div>
+                </div>
+              </div>
+              <div class="pedido-carrinho">
+                <h3 class="pedido-subtitulo">Carrinho</h3>
+                <p class="pedido-vazio" id="carrinho-vazio">Nenhum item adicionado.</p>
+                <ul class="lista-carrinho" id="lista-carrinho"></ul>
+              </div>
+            </aside>
+          </div>
+
+          <button class="botao-principal" type="button" id="ir-carrinho">
+            Ir para o carrinho
+          </button>
+        </form>
+      </section>
+    </main>
+
+    <footer class="rodape rodape-info">
+      <div>
+        <p>© 2024 AçaiHouse. Feito com carinho e açai gelado.</p>
+        <p>Desenvolvido por Fabricius Inacio.</p>
+      </div>
+      <a class="botao-secundario rodape-admin" href="admin-login.html">Admin</a>
+    </footer>
+
+    <script src="https://cdn.jsdelivr.net/npm/@supabase/supabase-js@2"></script>
+    <script src="script.js"></script>
+  </body>
+</html>
+
+
+
+
+
+

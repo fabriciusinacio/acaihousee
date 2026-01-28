@@ -1,0 +1,60 @@
+<!doctype html>
+<html lang="pt-BR">
+  <head>
+    <meta charset="utf-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1" />
+    <title>Login Admin | AçaiHouse</title>
+    <link rel="icon" href="imagens/icone-acai.svg" type="image/svg+xml" />
+    <link rel="stylesheet" href="styles.css" />
+  </head>
+  <body>
+    <header class="cabecalho">
+      <div class="barra-topo">
+        <div class="marca">
+          <img src="imagens/acai-logo.png" alt="Logo AçaiHouse" class="logo" />
+          <span class="status-loja" data-status-loja>Fechado</span>
+        </div>
+        <button class="botao-menu" type="button" aria-label="Abrir menu" aria-expanded="false" data-menu-toggle><span class="botao-menu-icone" aria-hidden="true"><span></span><span></span><span></span></span></button>
+        <nav class="navegacao">
+          <a class="botao-nav" href="index.html#secao-inicio">Início</a>
+          <a class="botao-nav" href="cardapio.html">Cardápio</a>
+          <a class="botao-nav" href="index.html#secao-contato">Contato</a>
+        </nav>
+      </div>
+    </header>
+
+    <main>
+      <section class="secao">
+        <div class="secao-cabecalho">
+          <p class="secao-etiqueta">Admin</p>
+          <h2 class="secao-titulo">Acesso ao painel</h2>
+          <p class="secao-texto">Entre com login e senha.</p>
+        </div>
+
+        <form class="formulario-pedido" id="formulario-admin-login">
+          <div class="campo-formulario">
+            <label for="admin-email">Email</label>
+            <input type="email" id="admin-email" autocomplete="username" />
+          </div>
+          <div class="campo-formulario">
+            <label for="admin-senha">Senha</label>
+            <input type="password" id="admin-senha" autocomplete="current-password" />
+          </div>
+          <div class="lista-opcoes">
+            <button class="botao-principal" type="submit">Entrar</button>
+            <span class="campo-ajuda" id="admin-login-status"></span>
+          </div>
+        </form>
+      </section>
+    </main>
+
+    <script src="https://cdn.jsdelivr.net/npm/@supabase/supabase-js@2"></script>
+    <script src="script.js"></script>
+  </body>
+</html>
+
+
+
+
+
+

@@ -1,0 +1,162 @@
+﻿<!doctype html>
+<html lang="pt-BR">
+  <head>
+    <meta charset="utf-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1" />
+    <title>AçaiHouse</title>
+    <link rel="icon" href="imagens/icone-acai.svg" type="image/svg+xml" />
+    <link rel="stylesheet" href="styles.css" />
+  </head>
+  <body>
+    <header class="cabecalho" id="secao-inicio">
+      <div class="barra-topo">
+        <div class="marca">
+          <img
+            src="imagens/acai-logo.png"
+          alt="Logo AçaiHouse"
+            class="logo"
+          />
+          <span class="status-loja" data-status-loja>Fechado</span>
+        </div>
+        <button class="botao-menu" type="button" aria-label="Abrir menu" aria-expanded="false" data-menu-toggle><span class="botao-menu-icone" aria-hidden="true"><span></span><span></span><span></span></span></button>
+        <nav class="navegacao">
+          <a class="botao-nav" href="#secao-inicio">Início</a>
+          <a class="botao-nav" href="cardapio.html">Cardápio</a>
+          <a class="botao-nav" href="#secao-contato">Contato</a>
+                  </nav>
+      </div>
+
+      <div class="carrossel" aria-label="Carrossel de fotos ilustrativas">
+        <div class="carrossel-faixa" data-carrossel>
+          <figure class="carrossel-slide">
+            <img src="imagens/40.jpg" alt="Açai servido com frutas tropicais" />
+          </figure>
+          <figure class="carrossel-slide">
+            <img src="imagens/10.jpg" alt="Copo de açai com granola" />
+          </figure>
+          <figure class="carrossel-slide">
+            <img src="imagens/20.jpg" alt="Bowl de açai com banana" />
+          </figure>
+          <figure class="carrossel-slide">
+            <img src="imagens/30.jpg" alt="Mesa com adicionais e coberturas" />
+          </figure>
+        </div>
+        <a class="botao-principal botao-carrossel" href="pedidos.html">Fazer pedido</a>
+        <div class="carrossel-indicadores" data-indicadores>
+          <span class="indicador ativo"></span>
+          <span class="indicador"></span>
+          <span class="indicador"></span>
+          <span class="indicador"></span>
+        </div>
+      </div>
+    </header>
+
+    <main>
+      <section class="secao destaque" id="secao-destaque">
+        <div class="destaque-grid">
+          <div class="mini-carrossel" aria-label="Destaques da semana">
+            <button class="mini-carrossel-controle anterior" data-mini-anterior>
+              &#8249;
+            </button>
+            <div class="mini-carrossel-faixa" data-mini-carrossel>
+              <figure class="mini-carrossel-slide" data-titulo="Tradicional" data-texto="Monte seu açai com adicionais especiais e ganhe um topper exclusivo. Promo válida por tempo limitado.
+              ">
+                <img src="imagens/acai-tradicional-destaque.jpg" alt="Açai tradicional" />
+              </figure>
+              <figure class="mini-carrossel-slide" data-titulo="Garrafa trufada" data-texto="Açai na garrafa com textura cremosa e adicionais especiais para adoçar o dia.">
+                <img src="imagens/10.jpg" alt="Açai na garrafa" />
+              </figure>
+              <figure class="mini-carrossel-slide" data-titulo="Tigela premium" data-texto="Escolha seus adicionais favoritos e monte uma tigela completa para compartilhar.">
+                <img src="imagens/marmita-detaque.jpg" alt="Açai na tigela" />
+              </figure>
+            </div>
+            <button class="mini-carrossel-controle proximo" data-mini-proximo>
+              &#8250;
+            </button>
+            <div class="mini-carrossel-indicadores" data-mini-indicadores>
+              <span class="mini-indicador ativo"></span>
+              <span class="mini-indicador"></span>
+              <span class="mini-indicador"></span>
+            </div>
+          </div>
+          <div class="destaque-conteudo">
+            <p class="secao-etiqueta">Destaque</p>
+            <h2 class="secao-titulo" id="destaque-titulo">Combo refrescante do dia</h2>
+            <p class="secao-texto" id="destaque-texto">
+              Monte seu açai com adicionais especiais e ganhe um topper exclusivo.
+              Promo válida por tempo limitado.
+            </p>
+            <a class="botao-principal" href="pedidos.html">Pedir agora</a>
+          </div>
+        </div>
+      </section>
+
+      <section class="secao" id="secao-adicionais">
+        <div class="secao-cabecalho">
+          <p class="secao-etiqueta">Adicionais</p>
+          <h2 class="secao-titulo">Escolha seu Adicional</h2>
+          <p class="secao-texto">
+            Complemente com caldas especiais, crocantes e frutas tropicais.
+          </p>
+        </div>
+        <div class="grade-adicionais lista-adicionais">
+          <a class="item-adicional adicional-link" href="pedidos.html">Leite condensado</a>
+          <a class="item-adicional adicional-link" href="pedidos.html">Granola</a>
+          <a class="item-adicional adicional-link" href="pedidos.html">M&amp;M</a>
+          <a class="item-adicional adicional-link" href="pedidos.html">Kit Kat</a>
+          <a class="item-adicional adicional-link" href="pedidos.html">Banana</a>
+          <a class="item-adicional adicional-link" href="pedidos.html">Uva</a>
+          <a class="item-adicional adicional-link" href="pedidos.html">Kiwi</a>
+          <a class="item-adicional adicional-link" href="pedidos.html">Morango</a>
+          <a class="item-adicional adicional-link" href="pedidos.html">Manga</a>
+          <a class="item-adicional adicional-link" href="pedidos.html">Maracujá</a>
+          <a class="item-adicional adicional-link" href="pedidos.html">Paçoca</a>
+          <a class="item-adicional adicional-link" href="pedidos.html">Leite em pó</a>
+          <a class="item-adicional adicional-link" href="pedidos.html">Creme de avelã</a>
+          <a class="item-adicional adicional-link" href="pedidos.html">Pasta de amendoim</a>
+          <a class="item-adicional adicional-link" href="pedidos.html">Coco ralado</a>
+          <a class="item-adicional adicional-link" href="pedidos.html">Castanha de caju</a>
+          <a class="item-adicional adicional-link" href="pedidos.html">Amendoim</a>
+          <a class="item-adicional adicional-link" href="pedidos.html">Biscoito crocante</a>
+          <a class="item-adicional adicional-link" href="pedidos.html">Calda de chocolate</a>
+          <a class="item-adicional adicional-link" href="pedidos.html">Calda de morango</a>
+        </div>
+      </section>
+
+      <section class="secao contato" id="secao-contato">
+        <div class="secao-cabecalho">
+          <p class="secao-etiqueta">Contato</p>
+          <h2 class="secao-titulo">Peça seu açai e refresque o dia</h2>
+          <p class="secao-texto">
+            Atendimento diário das 10h às 22h. Entregas rápidas no bairro e
+            retirada na loja.
+          </p>
+        </div>
+        <div class="painel-contato">
+          <div>
+            <p class="contato-destaque">Rua das Palmeiras, 108 - Centro</p>
+            <p>WhatsApp: (11) 98888-7777</p>
+            <p>Instagram: @acaiverao</p>
+          </div>
+          <a class="botao-principal" href="pedidos.html">Fazer pedido</a>
+        </div>
+      </section>
+    </main>
+
+    <footer class="rodape rodape-info">
+      <div>
+        <p>© 2024 AçaiHouse. Energia tropical todos os dias.</p>
+        <p>Desenvolvido por Fabricius Inacio.</p>
+      </div>
+      <a class="botao-secundario rodape-admin" href="admin-login.html">Admin</a>
+    </footer>
+
+    <script src="https://cdn.jsdelivr.net/npm/@supabase/supabase-js@2"></script>
+    <script src="script.js"></script>
+  </body>
+</html>
+
+
+
+
+

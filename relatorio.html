@@ -1,0 +1,83 @@
+<!doctype html>
+<html lang="pt-BR">
+  <head>
+    <meta charset="utf-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1" />
+    <title>Relatorio | AçaiHouse</title>
+    <link rel="icon" href="imagens/icone-acai.svg" type="image/svg+xml" />
+    <link rel="stylesheet" href="styles.css" />
+  </head>
+  <body>
+    <header class="cabecalho">
+      <div class="barra-topo">
+        <div class="marca">
+          <img src="imagens/acai-logo.png" alt="Logo AçaiHouse" class="logo" />
+          <span class="status-loja" data-status-loja>Fechado</span>
+        </div>
+        <button class="botao-menu" type="button" aria-label="Abrir menu" aria-expanded="false" data-menu-toggle><span class="botao-menu-icone" aria-hidden="true"><span></span><span></span><span></span></span></button>
+        <nav class="navegacao">
+          <a class="botao-nav" href="index.html#secao-inicio">Início</a>
+          <a class="botao-nav" href="cardapio.html">Cardápio</a>
+          <a class="botao-nav" href="index.html#secao-contato">Contato</a>
+                  </nav>
+      </div>
+    </header>
+
+    <main>
+      <section class="secao">
+        <div class="secao-cabecalho">
+          <p class="secao-etiqueta">Admin</p>
+          <h2 class="secao-titulo">Relatorio</h2>
+          <p class="secao-texto">
+            Resumo de vendas e pagamentos por periodo.
+          </p>
+        </div>
+
+        <div class="formulario-pedido">
+          <div class="lista-opcoes acoes-admin">
+            <a class="botao-secundario" href="admin-pedidos.html">Ver pedidos</a>
+            <button class="botao-secundario" type="button" id="admin-logout">
+              Sair
+            </button>
+          </div>
+          <div class="lista-opcoes relatorio-filtros">
+            <label class="opcao-checagem">
+              Ano
+              <select id="relatorio-filtro-ano"></select>
+            </label>
+            <label class="opcao-checagem">
+              Mes
+              <select id="relatorio-filtro-mes"></select>
+            </label>
+            <label class="opcao-checagem">
+              Inicio
+              <input type="date" id="relatorio-filtro-inicio" />
+            </label>
+            <label class="opcao-checagem">
+              Fim
+              <input type="date" id="relatorio-filtro-fim" />
+            </label>
+            <button class="botao-secundario" type="button" id="relatorio-filtrar">
+              Buscar
+            </button>
+          </div>
+          <div id="relatorio-resumo" class="lista-opcoes"></div>
+          <div id="relatorio-pagamentos" class="lista-opcoes"></div>
+          <div id="relatorio-item-mais-vendido" class="lista-opcoes"></div>
+          <h3 class="pedido-subtitulo">Pedidos (historico)</h3>
+          <div id="relatorio-pedidos" class="lista-opcoes"></div>
+          <h3 class="pedido-subtitulo">Fechamentos</h3>
+          <div id="relatorio-fechamentos" class="lista-opcoes"></div>
+        </div>
+      </section>
+    </main>
+
+    <script src="https://cdn.jsdelivr.net/npm/@supabase/supabase-js@2"></script>
+    <script src="script.js"></script>
+  </body>
+</html>
+
+
+
+
+
