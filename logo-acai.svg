@@ -1,0 +1,12 @@
+﻿<svg xmlns="http://www.w3.org/2000/svg" width="200" height="200" viewBox="0 0 200 200">
+  <defs>
+    <linearGradient id="gradiente" x1="0" x2="1" y1="0" y2="1">
+      <stop offset="0%" stop-color="#ff5a74" />
+      <stop offset="100%" stop-color="#4a1c5c" />
+    </linearGradient>
+  </defs>
+  <rect width="200" height="200" rx="48" fill="url(#gradiente)" />
+  <circle cx="100" cy="86" r="52" fill="#fff7f2" opacity="0.9" />
+  <path d="M60 118c14 18 66 18 80 0" fill="none" stroke="#4a1c5c" stroke-width="6" stroke-linecap="round" />
+  <text x="100" y="168" text-anchor="middle" font-family="Bodoni MT, Didot, Garamond, serif" font-size="22" fill="#fff7f2" letter-spacing="2">AçaiVerão</text>
+</svg>

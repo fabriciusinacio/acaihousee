@@ -1,0 +1,13 @@
+﻿<svg xmlns="http://www.w3.org/2000/svg" width="1200" height="700" viewBox="0 0 1200 700">
+  <defs>
+    <linearGradient id="fundo" x1="0" x2="1" y1="0" y2="1">
+      <stop offset="0%" stop-color="#ffb347" />
+      <stop offset="100%" stop-color="#ff5a74" />
+    </linearGradient>
+  </defs>
+  <rect width="1200" height="700" fill="url(#fundo)" />
+  <circle cx="940" cy="180" r="120" fill="#fff7f2" opacity="0.65" />
+  <circle cx="200" cy="520" r="160" fill="#4a1c5c" opacity="0.2" />
+  <text x="80" y="140" font-family="Bodoni MT, Didot, Garamond, serif" font-size="64" fill="#4a1c5c">Açai com frutas tropicais</text>
+  <text x="80" y="210" font-family="Gill Sans, Trebuchet MS, sans-serif" font-size="28" fill="#4a1c5c" letter-spacing="3">FRESCO - COLORIDO - ENERGIA</text>
+</svg>

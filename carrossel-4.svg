@@ -1,0 +1,12 @@
+﻿<svg xmlns="http://www.w3.org/2000/svg" width="1200" height="700" viewBox="0 0 1200 700">
+  <defs>
+    <linearGradient id="fundo" x1="0" x2="1" y1="0" y2="1">
+      <stop offset="0%" stop-color="#4a1c5c" />
+      <stop offset="100%" stop-color="#ffb347" />
+    </linearGradient>
+  </defs>
+  <rect width="1200" height="700" fill="url(#fundo)" />
+  <rect x="160" y="120" width="880" height="460" rx="80" fill="#fff7f2" opacity="0.88" />
+  <text x="240" y="260" font-family="Bodoni MT, Didot, Garamond, serif" font-size="58" fill="#4a1c5c">Adicionais e coberturas</text>
+  <text x="240" y="330" font-family="Gill Sans, Trebuchet MS, sans-serif" font-size="26" fill="#4a1c5c" letter-spacing="3">MONTE DO SEU JEITO</text>
+</svg>
